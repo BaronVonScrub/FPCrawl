@@ -2408,7 +2408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mappingList:
-    m_keys: 7700000061000000640000007300000071000000650000001101000012010000
+    m_keys: 770000006100000064000000730000007100000065000000
     m_values:
     - m_PersistentCalls:
         m_Calls:
@@ -2495,38 +2495,6 @@ MonoBehaviour:
         - m_Target: {fileID: 1871802866021163526, guid: a117e2fc401175849b2e43dd65a802dc,
             type: 3}
           m_MethodName: TurnRight
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4798111622126298240, guid: a117e2fc401175849b2e43dd65a802dc,
-            type: 3}
-          m_MethodName: TorchUp
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4798111622126298240, guid: a117e2fc401175849b2e43dd65a802dc,
-            type: 3}
-          m_MethodName: TorchDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

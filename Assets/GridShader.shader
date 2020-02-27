@@ -10,6 +10,7 @@
 		_NormalStrength("Normal Strength",Float) = 1.0
 		_GridSpacing("Grid spacing", float) = 5
 		_GridThickness("Grid line thickness", float) = 0.1
+		_GridStrength("Grid Strength",float) = 2
 	}
 		SubShader
 		{
@@ -38,6 +39,7 @@
 			float _GridSpacing;
 			float _GridThickness;
 			float _NormalStrength;
+			float _GridStrength;
 
 			// Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
 			// See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -58,7 +60,7 @@
 				float isGrid = max(sign(_GridThickness - (NFMod(IN.worldPos.x,_GridSpacing))), 0);
 				isGrid += max(sign(_GridThickness - (NFMod(IN.worldPos.z, _GridSpacing))), 0);
 				isGrid = min(1, isGrid);
-				o.Albedo *= max(1, 2 * isGrid);
+				o.Albedo *= max(1, _GridStrength * isGrid);
 
 				//Normal stuff
 				o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_MainTex));

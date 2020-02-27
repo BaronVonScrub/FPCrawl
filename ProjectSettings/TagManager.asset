@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Roof
   - OverheadOnly
+  - Floor
   layers:
   - Default
   - TransparentFX

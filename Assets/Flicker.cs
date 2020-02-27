@@ -5,7 +5,7 @@ using UnityEngine;
 public class Flicker : MonoBehaviour
 {
     Light myLight;
-    public Light overLight;
+    //public Light overLight;
     Color baseColor;
     public float flickerPercent=30f;
     public float hueflickerAmount=.3f;
@@ -45,6 +45,6 @@ public class Flicker : MonoBehaviour
 
         myLight.color=Color.HSVToRGB(baseHue+hueShift, baseSat + satShift, baseVal + valShift);
 
-        overLight.color= Color.HSVToRGB(baseHue + hueShift, baseSat + satShift, baseVal + valShift);
+       // overLight.color= Color.HSVToRGB(baseHue + hueShift, baseSat + satShift, baseVal + valShift);
     }
 }

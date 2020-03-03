@@ -14,7 +14,6 @@ public class ViewSquarer : MonoBehaviour
 
         rat = (float)Screen.width / Screen.height;
 
-
         Rect rect = camera.rect;
 
         rect.width = 0.15f;

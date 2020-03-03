@@ -20,7 +20,7 @@ public class walkTracker : MonoBehaviour
         currPos = transform.position;
         if (goalPos - currPos != Vector3.zero)
         {
-            Vector3 moveAmount = Mathf.Min(Vector3.Magnitude(goalPos-currPos),Time.deltaTime * moveSpeed) * Vector3.Normalize(goalPos - currPos);
+            Vector3 moveAmount = Mathf.Min(Vector3.Magnitude(goalPos - currPos), Time.deltaTime * moveSpeed) * Vector3.Normalize(goalPos - currPos);
             transform.position += moveAmount;
             walking = true;
         }

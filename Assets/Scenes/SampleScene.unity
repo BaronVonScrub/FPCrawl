@@ -816,6 +816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 254054133}
+  - component: {fileID: 254054134}
   m_Layer: 0
   m_Name: OrbDisplay
   m_TagString: Untagged
@@ -846,6 +847,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &254054134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254054132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2285f797b41a5b4d832c3c7c346ee84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startFade: 36
+  endFade: 46
 --- !u!1001 &264960994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1970,7 +1985,8 @@ PrefabInstance:
       propertyPath: m_Shadows.m_Strength
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3072773316549591422, guid: 306aa0b52ef7eda4ab977dda111fbce5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 306aa0b52ef7eda4ab977dda111fbce5, type: 3}
 --- !u!4 &544283706 stripped
 Transform:
@@ -3368,11 +3384,11 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932174935}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -3655,7 +3671,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 100
+  far clip plane: 50
   field of view: 80
   orthographic: 0
   orthographic size: 5
@@ -4898,11 +4914,11 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311249751}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -6578,6 +6594,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59ccd1309cd2ac94a8700faf3ab6a78d, type: 3}
+--- !u!1 &1689940499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3072773316549591421, guid: 306aa0b52ef7eda4ab977dda111fbce5,
+    type: 3}
+  m_PrefabInstance: {fileID: 534742772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1689940501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689940499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2285f797b41a5b4d832c3c7c346ee84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startFade: 36
+  endFade: 46
 --- !u!1001 &1722926728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7693,7 +7729,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3863
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0

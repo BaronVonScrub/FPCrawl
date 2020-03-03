@@ -7,7 +7,7 @@ TagManager:
   - Roof
   - OverheadOnly
   - Floor
-  - Gridded
+  - Grid
   layers:
   - Default
   - TransparentFX

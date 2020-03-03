@@ -11,8 +11,12 @@ public class GridToggle : MonoBehaviour
         Material material = renderer.material;
 
         if (material.shader != Shader.Find("Custom/GroundShader"))
+        {
             material.shader = Shader.Find("Custom/GroundShader");
+        }
         else
+        {
             material.shader = Shader.Find("Custom/GridShader");
+        }
     }
 }

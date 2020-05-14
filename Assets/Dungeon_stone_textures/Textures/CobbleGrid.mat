@@ -135,7 +135,7 @@ Material:
     - _GlossyReflections: 0
     - _GridSpacing: 6
     - _GridStrength: 10
-    - _GridThickness: 0.2
+    - _GridThickness: 0
     - _HueVariationKwToggle: 0
     - _LightingEnabled: 0
     - _Metallic: 0.577

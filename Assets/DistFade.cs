@@ -33,6 +33,7 @@ public class DistFade : MonoBehaviour
 
         //Emission list initialization
         rend = new List<Renderer>();
+        rendBaseCol = new List<Color>();
         mat = new List<Material>();
 
         //Particle list initialization
@@ -56,6 +57,7 @@ public class DistFade : MonoBehaviour
         //List renderers for materials
         foreach (Renderer r in GetComponents<Renderer>())
         {
+            rend.Add(r);
             mat.Add(r.material);
             rendBaseCol.Add(r.material.color);
         }

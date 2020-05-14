@@ -12,7 +12,6 @@ public class KeyMapper : MonoBehaviour
         {
             if (Input.GetKeyDown(kcode))
             {
-                Debug.Log(mappingList);
                 mappingList[kcode].Invoke();
             }
         }

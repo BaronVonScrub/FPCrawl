@@ -10,13 +10,9 @@ public class GridToggle : MonoBehaviour
         Renderer renderer = floor.GetComponent<Renderer>();
         Material material = renderer.material;
 
-        if (material.shader != Shader.Find("Custom/GroundShader"))
-        {
-            material.shader = Shader.Find("Custom/GroundShader");
-        }
+        if (material.GetFloat("_GridThickness") == 0.2f)
+            material.SetFloat("_GridThickness", 0.0f);
         else
-        {
-            material.shader = Shader.Find("Custom/GridShader");
-        }
+            material.SetFloat("_GridThickness", 0.2f);
     }
 }

@@ -5,7 +5,7 @@ using System;
 
 public class Movement : MonoBehaviour
 {
-    public float moveSpeed =3;
+    public float moveSpeed;
     GameObject player;
     turnTracker turnt;
     walkTracker walkt;
@@ -48,6 +48,7 @@ public class Movement : MonoBehaviour
 
     public void Init()
     {
+        moveSpeed = FindObjectOfType<gridSnap>().gridSize;
         player = GameObject.FindGameObjectWithTag("Player");
         walkt = player.GetComponent<walkTracker>();
         turnt = player.GetComponent<turnTracker>();
